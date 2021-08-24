@@ -9,7 +9,6 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { DashboardComponent } from './components/layout/dashboard/dashboard.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { PortfolioComponent } from './components/portfolio/print-media.component';
-import { ServicesComponent } from './components/services/services.component';
 import { NavMenuComponent } from './components/layout/nav-menu/nav-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IvyGalleryModule } from 'angular-gallery';
@@ -29,7 +28,6 @@ import { HeroServicesComponent } from './components/articles/hero-services/hero-
     DashboardComponent,
     HeaderComponent,
     PortfolioComponent,
-    ServicesComponent,
     NavMenuComponent,
     TabsComponent,
     TabComponent,
