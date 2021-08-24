@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  //width: 200px;
+  margin: 0 .5em 0 0;
+
+  img {
+    margin-left: 1em;
+    height: 200px;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+}
+
+.contact-header {
+  text-align: right;
+  padding: 1em;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  a {
+    display: inline;
+    text-decoration: none;
+    text-decoration: none;
+    color: unset;
+  }
+
+  a:visited, a:hover, a:active, a:focus, a:target, a:focus {
+    color: unset;
+  }
+
+  div {
+    display: inline-block;
+  }
+
+  fa-icon {
+    margin: 0 .5em;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header {
+    //height: 250px;
+    margin: 0 auto;
+    img {
+      height: 200px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,110 @@
+$blue-moon: blue;
+$background-color: rgb(255 255 255);
+$primary-border: solid 1px rgb(211 119 111 / 50%);
+$primary-inset: inset 0 0 5px rgb(247 179 85 / 50%);
+$primary-hover: inset 0 0 10px dimgray;
+$secondary-inset: inset 0 0 14px #7a7c73;
+$secondary-border: #9badac solid 1px;
+$secondary-hover: inset 0 0 5px #d88f82;
+$drop-shadow: inset 1px 1px 15px 5px #d88f82;
+$border-radius: 5px;
+$text-dark: #5a6d6c;
+$text-light: whitesmoke;
+
+.light-theme {
+  .contact-header, .copy {
+    background-color: #d88f82;
+    color: $text-light;
+  }
+
+  .dashboard-banner {
+    h3 {
+      margin: 1em;
+      padding: .5em 0;
+    }
+  }
+}
+
+.light-theme .main-content {
+  background-color: hsl(34, 53%, 82%);
+  background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+    hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+    hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+    hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+    hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+    hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+  ),
+  repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+      hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+      hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+      hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+      hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+      hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px
+  );
+  color: $text-dark;
+  box-shadow: $drop-shadow;
+
+  a {
+    button {
+      color: $text-dark;
+    }
+  }
+
+  .header .column {
+    margin: .5em;
+    border-radius: 34%;
+    border: $primary-border;
+    background-color: #fef6ea;
+
+    img {
+      margin-left: -.1em;
+    }
+
+    h3 {
+      display: none;
+    }
+  }
+
+  button.primary {
+    border: $primary-border;
+    box-shadow: $primary-inset;
+    background-color: $background-color;
+  }
+
+  button.primary:hover,  button.primary::selection {
+    border: dimgray solid 1px;
+    box-shadow: $primary-hover;
+  }
+
+  ul.tabs li {
+    border-radius: 10px;
+    color: $text-dark;
+    background-color: $background-color;
+    box-shadow: $secondary-inset;
+    border: $secondary-border;
+  }
+
+  ul.tabs li:hover,  ul.tabs li::selection {
+    box-shadow: $secondary-hover;
+    border: #d88f82 solid 1px;
+  }
+
+  .article, article {
+    background: white;
+    opacity: 1;
+    border: solid 1px rgb(211 119 111 / 50%);
+    border-radius: 5px;
+    box-shadow: inset 0 0 25px rgb(247 179 85 / 50%);
+  }
+
+  .dashboard-banner {
+    background-image: url("/assets/inspiration-green.png");
+    background-color: #030a18;
+
+  }
+
+  hr {
+    box-shadow: inset 0 12px 12px -12px #a0736a;
+  }
+}
+

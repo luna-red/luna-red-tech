@@ -1,0 +1,25 @@
+footer {
+  margin-top: 1em;
+  text-align: center;
+
+  article, .article {
+    margin: .5em;
+    flex-direction: column;
+  }
+
+  a {
+    display: inline;
+    text-decoration: none;
+    text-decoration: none;
+    color: unset;
+  }
+
+  a:visited, a:hover, a:active, a:focus, a:target, a:focus {
+    color: unset;
+  }
+
+  fa-icon {
+    display: inline;
+  }
+}
+

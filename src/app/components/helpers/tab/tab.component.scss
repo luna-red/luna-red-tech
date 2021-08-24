@@ -1,0 +1,11 @@
+.tab-content {
+  margin: 2em;
+}
+
+
+/* Medium devices (landscape tablets, 858px and smaller) */
+@media only screen and (max-width: 858px) {
+  .tab-content {
+    margin: 0;
+  }
+}

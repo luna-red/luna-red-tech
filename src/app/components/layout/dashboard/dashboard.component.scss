@@ -1,0 +1,50 @@
+.inspiration {
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 5px;
+  margin: 1em;
+}
+
+.welcome {
+  flex-direction: column;
+  padding: 1em;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hero {
+    width: 80%;
+
+    h3 {
+      font-size: 1em;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+  .dashboard-wrap {
+    flex-direction: column;
+  }
+
+  .article {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 858px and smaller) */
+@media only screen and (max-width: 858px) {
+  .hero {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  .inspiration {
+    margin: 0;
+    height: 250px;
+  }
+}

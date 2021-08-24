@@ -1,0 +1,23 @@
+.affiliate-list-wrap {
+  max-width: 100%;
+
+h3 {
+    font-weight: 200;
+    margin: .2em;
+  }
+
+  img {
+    margin: 0;
+    max-width: 100%;
+    border: solid 1px white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .affiliate-list-wrap {
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

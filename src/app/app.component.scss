@@ -1,0 +1,30 @@
+.main-row {
+  position: relative;
+  z-index: 1;
+  right: 0;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  //height: 100vh;
+
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    //height: 100vh;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and smaller) */
+@media only screen and (max-width: 768px) {
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-row {
+    .main-content {
+      margin-top:18px;
+      flex-direction: column;
+    }
+  }
+}

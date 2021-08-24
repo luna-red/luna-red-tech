@@ -1,0 +1,97 @@
+$blue-moon: blue;
+$background-color: rgb(255 255 255);
+$primary-border: solid 1px #16e8fd;
+$primary-inset: inset 0 0 14px #16f1f6;
+$secondary-inset: inset 0 0 14px #085592;
+$drop-shadow: rgb(99 99 99 / 49%) 2px 2px 2px 2px;
+$border-radius: 20px;
+$text-dark: #085592;
+$text-light: whitesmoke;
+
+.corp-theme {
+  background: rgb(33,138,176);
+  //background-image: url("/assets/flowers.jpeg");
+  //background-repeat: no-repeat;
+  //background-size: contain;
+  background: linear-gradient(180deg, rgba(33,138,176,1) 0%, rgba(33,138,176,1) 22%, rgba(233,242,243,1) 51%, rgba(255,255,255,1) 100%);
+  box-shadow: inset 1px 1px 15px 5px #07384a;
+
+
+  color: $text-dark;
+
+  .contact-header, .copy {
+    background-color: $text-dark;
+    color: $text-light;
+  }
+
+  .article, article {
+    background: $background-color;
+    opacity: 1;
+    box-shadow: $primary-inset;
+    border: $primary-border;
+    border-radius: $border-radius;
+    //box-shadow: $drop-shadow;
+  }
+
+  .dashboard-banner {
+    background-image: url("/assets/inspiration-green.png");
+    border-radius: $border-radius;
+    border: $primary-border;
+  }
+
+  button.primary {
+    border: $primary-border;
+    background-color: $background-color;
+    box-shadow: $primary-inset;
+    color: $text-dark;
+    margin: .1em;
+    height: 4.5em;
+    width: 100%;
+    text-align: left;
+  }
+
+  button.primary:hover,  button.primary::selection{
+    box-shadow: $secondary-inset;
+  }
+
+  .header .column {
+    margin: .5em;
+    border-radius: 50%;
+    border: solid #16e8fd;
+    background-color: aliceblue;
+
+    img {
+      margin-left: -.1em;
+    }
+
+    h3 {
+      display: none;
+    }
+  }
+
+  button.secondary {
+    $button-display: inline;
+    $button-border: 1px solid #0019ff;
+    $button-color: whitesmoke;
+    $button-background-color: #70af1c;
+  }
+
+  ul.tabs li {
+    border-radius: 10px;
+    color: $text-light;
+    background-color: $text-dark;
+    box-shadow: none;
+    border: none;
+  }
+
+  ul.tabs li:hover,  ul.tabs li::selection{
+    box-shadow: $primary-inset !important;
+  }
+
+  hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px #218ab0;
+  }
+
+}

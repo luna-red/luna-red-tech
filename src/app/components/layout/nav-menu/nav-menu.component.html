@@ -1,0 +1,29 @@
+<fa-icon [icon]="navBars"
+         (click)="visible = !visible"
+         class="menu-icon nav-menu-icon"
+         *ngIf="!visible"></fa-icon>
+
+<div class="nav-wrap full">
+  <a routerLink="/">
+    <button class="primary">
+      <fa-icon [icon]="home"></fa-icon>
+      Home
+    </button>
+  </a>
+  <a routerLink="/portfolio">
+    <button class="primary">
+      <fa-icon [icon]="media"></fa-icon>
+      Portfolio
+    </button>
+  </a>
+
+</div>
+
+<div class="nav-wrap mobile" *ngIf="visible" [@slideInOut]>
+  <div class="nav-links">
+    <a routerLink="/"><button class="primary">Home</button></a>
+    <a routerLink="/portfolio"><button class="primary">Portfolio</button></a>
+  </div>
+  <fa-icon [icon]="navBars" (click)="visible = !visible" class="menu-icon-attached"></fa-icon>
+
+</div>

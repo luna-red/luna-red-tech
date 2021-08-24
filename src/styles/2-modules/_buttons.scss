@@ -1,0 +1,11 @@
+button.primary {
+  border-radius: 5px;
+  display: block;
+  padding: 1em;
+  margin: .5em;
+  width: 100%;
+
+  -moz-box-shadow: inset 0 0 10px #ededed;
+  -webkit-box-shadow: inset 0 0 10px #ededed;
+  box-shadow: inset 0 0 10px #ededed;
+}

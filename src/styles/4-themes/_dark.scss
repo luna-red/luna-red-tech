@@ -1,0 +1,83 @@
+$red-moon: red;
+$blue-moon: blue;
+$background-color: rgb(255 255 255);
+$primary-border: white 1px solid;
+$primary-inset: inset 0 0 10px #ededed;
+$article-border: solid 1px red;
+$secondary-inset: inset 0 0 14px #085592;
+$drop-shadow: inset 0 0 275px red;
+$border-radius: 20px;
+$text-dark: #085592;
+$text-light: whitesmoke;
+
+.dark-theme {
+  color: $text-light;
+
+  .dashboard-banner {
+    h3 {
+      margin: 1em;
+      padding: .5em 0;
+    }
+  }
+
+  button.primary {
+    background-color: black;
+    color: $text-light;
+    border: $primary-border;
+
+    -moz-box-shadow:    $primary-inset;
+    -webkit-box-shadow: $primary-inset;
+    box-shadow:         $primary-inset;
+  }
+
+  button.primary:hover, button.primary::selection{
+    border: orangered solid 1px;
+    box-shadow: inset 0 0 10px orangered;
+  }
+
+  button.secondary {
+    $button-display: inline;
+    $button-border: 1px solid greenyellow;
+    $button-color: whitesmoke;
+    $button-background-color: #70af1c;
+    $button-box-shadow: inset 0 0 10px greenyellow;
+  }
+
+  button.secondary:hover, button.secondary::selection{
+    border: orangered solid 1px;
+    box-shadow: inset 0 0 10px orangered;
+  }
+
+  .article, article {
+    background: rgb(0 0 0 / 80%);
+    border: solid 1px red;
+    border-radius: 5px;
+    box-shadow: $drop-shadow;
+  }
+
+  .contact-header, .copy {
+    background: rgb(0 0 0 / 80%);
+    border: solid 1px red;
+    border-radius: 5px;
+    box-shadow: $drop-shadow;
+    color: $text-light;
+  }
+
+  hr {
+    box-shadow: inset 0 12px 12px -12px $red-moon;
+  }
+
+
+  ul.tabs li:hover,  ul.tabs li::selection {
+    color: black;
+    background-color: white;
+    box-shadow: inset 0 0 10px greenyellow;
+  }
+}
+
+app-red-matrix {
+  background-color: black;
+}
+
+
+

@@ -1,0 +1,23 @@
+
+<app-red-matrix *ngIf="_theme === 'dark'"></app-red-matrix>
+<div class="main-row" [ngClass]="{'dark-theme': _theme === 'dark', 'light-theme': _theme === 'light', 'corp-theme': _theme === 'corp'}">
+  <div class="contact-header">
+    <div><fa-icon [icon]="phoneIcon"></fa-icon> 720-428-9874  &nbsp; |</div>
+    <div>
+      <a href="mailto:lunaredtech@example.com?subject=Mail from Website">
+        <fa-icon [icon]="emailIcon"></fa-icon> lunaredtech@gmail.com
+      </a>
+    </div>
+  </div>
+  <div class="main-content">
+    <app-header ></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
+  <div class="copy">
+    <fa-icon [icon]="emailIcon"></fa-icon>
+    <a href="mailto:lunaredtech@example.com?subject=Mail from Website">Contact</a>
+    <p>&copy; Copyright 2021 Luna Red Tech</p>
+  </div>
+</div>
+
