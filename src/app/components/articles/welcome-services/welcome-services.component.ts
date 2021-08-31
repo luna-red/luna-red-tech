@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { faGrin }  from '@fortawesome/free-solid-svg-icons';
+import { faClipboardList } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-welcome-services',
@@ -8,7 +9,7 @@ import { faGrin }  from '@fortawesome/free-solid-svg-icons';
 })
 export class WelcomeServicesComponent implements OnInit {
   @Input('Page') page: string;
-
+  public clipboard = faClipboardList;
   public grin = faGrin;
 
   constructor() { }

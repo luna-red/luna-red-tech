@@ -3,7 +3,7 @@
          class="menu-icon nav-menu-icon"
          *ngIf="!visible"></fa-icon>
 
-<div class="nav-wrap full">
+<nav class="nav-wrap full">
   <a routerLink="/">
     <button class="primary">
       <fa-icon [icon]="home"></fa-icon>
@@ -17,7 +17,7 @@
     </button>
   </a>
 
-</div>
+</nav>
 
 <div class="nav-wrap mobile" *ngIf="visible" [@slideInOut]>
   <div class="nav-links">
